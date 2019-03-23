@@ -1,0 +1,27 @@
+{
+  "name": "pong",
+  "version": "0.0.1",
+  "description": "Pong in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timbt/pong.git"
+  },
+  "author": "Tim Beattie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timbt/pong/issues"
+  },
+  "homepage": "https://github.com/timbt/pong#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
