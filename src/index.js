@@ -1,5 +1,7 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+import { startGame } from './Pong';
 
-ctx.fillStyle = 'black';
-ctx.fillRect(0, 0, 640, 480);
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+
+startGame(context);
+
