@@ -6,13 +6,7 @@ export default class Paddle {
         // Specifies top left corner of paddle
         this.xPosition = xPosition;
         this.yPosition = yPosition;
-    }
-
-    // Draws the paddle using the Canvas API
-    draw(context) {
-        context.fillStyle = 'black';
-        context.fillRect(
-            this.xPosition, this.yPosition, PADDLE_WIDTH, PADDLE_HEIGHT
-        );
+        this.height = PADDLE_HEIGHT;
+        this.width = PADDLE_WIDTH;
     }
 }
