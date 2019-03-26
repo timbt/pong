@@ -1,4 +1,5 @@
 import Paddle from './Paddle';
+import {CANVAS_WIDTH, CANVAS_HEIGHT} from './Canvas';
 
 function drawPaddle(paddle, context) {
     context.fillStyle = 'black';
@@ -7,7 +8,13 @@ function drawPaddle(paddle, context) {
         );
 }
  
+function createFrame(context, playerPaddle) {
+    context.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    drawPaddle(playerPaddle, context);
+    window.requestAnimationFrame(() => createFrame(context, playerPaddle));
+}
+
 export function startGame(context) {
     const playerPaddle = new Paddle(20, 210);
-    drawPaddle(playerPaddle, context);
+    window.requestAnimationFrame(() => createFrame(context, playerPaddle));
 }
