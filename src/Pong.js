@@ -1,5 +1,5 @@
 import Paddle from './Paddle';
-import {CANVAS_WIDTH, CANVAS_HEIGHT} from './Canvas';
+import { CANVAS_WIDTH, CANVAS_HEIGHT } from './Canvas';
 
 function drawPaddle(paddle, context) {
     context.fillStyle = 'black';
