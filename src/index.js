@@ -1,7 +1,9 @@
 import { startGame } from './Pong';
+import { canvas } from './Canvas';
 
-const canvas = document.getElementById('canvas');
+const container = document.getElementById('container');
+container.appendChild(canvas);
+
 const context = canvas.getContext('2d');
-
 startGame(context);
 
