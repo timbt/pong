@@ -10,4 +10,8 @@ export default class Paddle {
         this.height = PADDLE_HEIGHT;
         this.width = PADDLE_WIDTH;
     }
+
+    move(distance) {
+        this.yPosition += distance;
+    } 
 }

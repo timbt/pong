@@ -17,4 +17,12 @@ function createFrame(context, playerPaddle) {
 export function startGame(context) {
     const playerPaddle = new Paddle(20, 210);
     window.requestAnimationFrame(() => createFrame(context, playerPaddle));
+    
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowUp') {
+            playerPaddle.move(-5);
+        } else if (e.key === 'ArrowDown') {
+            playerPaddle.move(5);
+        }
+    });
 }
