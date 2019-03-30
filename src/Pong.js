@@ -20,9 +20,9 @@ export function startGame(context) {
     
     document.addEventListener('keydown', e => {
         if (e.key === 'ArrowUp') {
-            playerPaddle.move(-5);
+            playerPaddle.move(-8);
         } else if (e.key === 'ArrowDown') {
-            playerPaddle.move(5);
+            playerPaddle.move(8);
         }
     });
 }
